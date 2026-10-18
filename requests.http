@@ -1,0 +1,30 @@
+Get http://127.0.0.1:5000/books
+
+### Add a new book
+POST http://127.0.0.1:5000/books
+Content-Type: application/json
+
+{
+    "title": "The River and the Source",
+    "author": "Margaret A. Ogola"
+}
+
+### Add another book
+POST http://127.0.0.1:5000/books
+Content-Type: application/json
+
+{
+    "title": "Harry Potter",
+    "author": "J.O.Rowlings"
+}
+
+### Update book 3
+PATCH http://127.0.0.1:5000/books/3
+Content-Type: application/json
+
+{
+    "title": "Harry Potter and the Philosopher's Stone"
+}
+
+### Delete book 3
+DELETE http://127.0.0.1:5000/books/3
